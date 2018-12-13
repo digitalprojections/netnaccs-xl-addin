@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Excel Add-In with Commands Sample</title>
+
+    <script src="Scripts/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="Scripts/FabricUI/MessageBanner.js" type="text/javascript"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="Scripts/Office/1/office.js" type="text/javascript"></script>  -->
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+
+    <!-- For the Office UI Fabric, go to https://aka.ms/office-ui-fabric to learn more. -->
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.min.css">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/2.1.0/fabric.components.min.css">
+    
+    <!-- To enable the offline use of Office UI Fabric, use: -->
+    <!-- link rel="stylesheet" href="Content/fabric.min.css" -->
+    <!-- link rel="stylesheet" href="Content/fabric.components.min.css" -->
+</head>
+<body class="ms-font-m ms-welcome">
+    <div id="content-header">
+        <div class="padding">
+            <h1>NetNaccs自動入力</h1>
+        </div>
+    </div>
+    <div id="content-main">
+        <div class="padding">
+            <label class="desc show" onclick="hide_desc()">説明を表示する</label>
+            <div class="description">
+                <label class="desc" onclick="hide_desc()">説明を表示しない</label>
+                <p>以下のボタンをクリックするとドキュメントの中に名前が同じ様なファイルが作られます</p>
+
+                <p>例：</p>
+                <p><span class="file_name">K.Thai105.txt</span>このファイルはECR用になります。</p>
+                <p>ECR画面で外部ファイルとして開いて下さい</p>
+                <br />
+                <p>
+                    更にスタート
+                </p>
+            </div>
+            <button class="ms-Button" id="set-color">START</button>
+        </div>
+    </div>
+    <script>set_desc_state();</script>
+</body>
+</html>
