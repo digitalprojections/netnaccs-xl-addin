@@ -16,7 +16,7 @@
             return context.sync().then(function () {
                 console.log("", range.values[0][0] + " Address:" + range.address);
             });
-            
+            //research how to save the data to txt file
             
         }).catch(function (error) {
             console.log("Error: " + error);
